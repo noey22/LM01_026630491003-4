@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -18,12 +17,17 @@ const Footer: React.FC = () => {
           marginTop: '10px',
         }}
       >
-          <p style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>ช่องทางการติดต่อ:</p>
-        <p>
-          <a href="https://www.facebook.com/siriygron.songsalee" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <p style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>ช่องทางการติดต่อ:</p>
+        <p style={{ display: 'flex', justifyContent: 'center' }}>
+          <a href="https://www.facebook.com/siriygron.songsalee" target="_blank" rel="noopener noreferrer">
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
+              alt="Facebook" 
+              style={{ width: '50px', height: '50px' }}
+            />
+          </a>
         </p>
       </div>
-
     </div>
   );
 };
